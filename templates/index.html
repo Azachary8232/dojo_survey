@@ -8,19 +8,27 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-    <form action="/process" method="post"></form>
+    <h1>DOJO Survey</h1>
+    <form action="/process" method="post">
         <label for="name">Your Name</label>
         <input type="text" name="full_name">
         <label for="location">Dojo Location</label>
-        <select name="dojo_locatiop" id="">
-            <option value="san jose">San Jose</option>
-            <option value="seattle">Seattle</option>
-            <option value="boise">Boise</option>
-            <option value="remote">Remote</option>
+        <select name="location" id="">
+            <option value="San Jose">San Jose</option>
+            <option value="Seattle">Seattle</option>
+            <option value="Boise">Boise</option>
+            <option value="Remote">Remote</option>
         </select>
+        <select name="language" id="">
+            <option value="Web Fundamentals">Web Fundamental</option>
+            <option value="Python">Python</option>
+            <option value="MERN">MERN</option>
+            <option value="Java">JAVA</option>
+        </select>    
         <label for="comment">Comment (optional)</label>
         <textarea name="comments" id="" cols="30" rows="10"></textarea>
         <button type="submit">Submit</button>
+    </form>    
     
 
 
