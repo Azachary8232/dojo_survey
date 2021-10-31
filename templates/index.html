@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="/static/css/style.css">
 </head>
 <body>
-
-    <h1>Hello</h1>
+    <form action="/process" method="post"></form>
+        <label for="name">Your Name</label>
+        <input type="text" name="full_name">
+        <label for="location">Dojo Location</label>
+        <select name="dojo_locatiop" id="">
+            <option value="san jose">San Jose</option>
+            <option value="seattle">Seattle</option>
+            <option value="boise">Boise</option>
+            <option value="remote">Remote</option>
+        </select>
+        <label for="comment">Comment (optional)</label>
+        <textarea name="comments" id="" cols="30" rows="10"></textarea>
+        <button type="submit">Submit</button>
     
 
 
